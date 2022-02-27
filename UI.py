@@ -5,10 +5,23 @@
 def view_data(data, title):
     print(f'{title} = {data}')
 
-def get_value():
-    return int(input('value = '))
+def get_value(title):
+    return int(input(f'{title} = '))
+
+def get_sign():
+	sign = input('input action: ')
+	actions = '/*-+^#@'
+	while sign not in actions:
+		print('invalid value')
+		sign = input('input action: ')
+	return sign
 
 
+
+# def rational_input():
+# 	print('input first number')
+# 	get_value()
+# 	action
 
 # label = Label(root, text='0', width=35)
 # label.grid(row=0, column=0, columnspan=4, sticky="nsew")

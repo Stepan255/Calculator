@@ -5,3 +5,11 @@ Sun Feb 27 11:35:33 2022-test
 Sun Feb 27 11:35:33 2022-test
 Sun Feb 27 11:36:45 2022-test
 Sun Feb 27 11:36:46 2022-test
+Sun Feb 27 16:24:30 2022-test
+Sun Feb 27 16:25:49 2022-test
+Sun Feb 27 16:26:34 2022-test
+Sun Feb 27 16:27:13 2022-test
+Sun Feb 27 16:27:52 2022-test
+Sun Feb 27 16:28:00 2022-rational operation: 12 + 13
+Sun Feb 27 16:29:06 2022-test
+Sun Feb 27 16:29:32 2022-complex operation: (12+2j) + (13+4j) = (25+6j)

@@ -25,7 +25,7 @@ def degree():
 	# return math.degrees(a, b)
 	return a ** b
 
-def kor(a, b):
+def kor():
 	return a ** (1/b)
 
 
