@@ -2,6 +2,13 @@ import rational_numbers as rn
 import UI
 import complex_numbers as cn
 import logg as log
+import os
+
+userhome = os.path.expanduser('~')        
+
+
+# Gives username by splitting path based on OS
+print("username: " + os.path.split(os.path.expanduser('~'))[-1])
 
 def button_click():
 	numbers = get_numbers()
@@ -9,7 +16,8 @@ def button_click():
 	rn.init(numbers[0], numbers[1])
 	result = do_calculations(sign)
 	print(f'result = {result}')
-	log.logger(f'{numbers[2]} operation: {numbers[0]} {sign} {numbers[1]} = {result}')
+	u = os.path.expanduser('~')
+	log.logger(f'{os.path.split(u)[-1]} {numbers[2]} operation: {numbers[0]} {sign} {numbers[1]} = {result}')
 
 
 def get_numbers():
