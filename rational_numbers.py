@@ -1,29 +1,31 @@
-import math
+# import math
 
 
 a = 0
 b = 0
+def init(number_1, number_2):
+	global a
+	global b
+	a = number_1
+	b = number_2
 
-def init():
-    global a
-    global b
+def plus():
+	return a + b
 
-def plus(a, b):
-    return a + b
+def minus():
+	return a - b
 
-def minus(a, b):
-    return a - b
+def multiply():
+	return a * b
 
-def multiply(a, b):
-    return a * b
+def divide():
+	return a / b
 
-def divide(a, b):
-    return a / b
+def degree():
+	# return math.degrees(a, b)
+	return a ** b
 
-def degree(a, b):
-    return math.degrees(a, b)
-
-def sqrt(a):
-    return math.sqrt(a)
+def kor(a, b):
+	return a ** (1/b)
 
 
