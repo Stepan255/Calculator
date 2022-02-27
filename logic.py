@@ -15,13 +15,13 @@ def button_click():
 	sign = UI.get_sign()
 	rn.init(numbers[0], numbers[1])
 	result = do_calculations(sign)
-	print(f'result = {result}')
+	UI.view_data(result, 'result')
 	u = os.path.expanduser('~')
 	log.logger(f'{os.path.split(u)[-1]} {numbers[2]} operation: {numbers[0]} {sign} {numbers[1]} = {result}')
 
 
 def get_numbers():
-	user_type = input('input "R" or "com"')
+	user_type = UI.get_text('input "R" or "com". type')
 	if user_type == 'R':
 		return rational_input()
 	elif user_type == 'com':
