@@ -4,12 +4,6 @@ import complex_numbers as cn
 import logg as log
 import os
 
-userhome = os.path.expanduser('~')        
-
-
-# Gives username by splitting path based on OS
-print("username: " + os.path.split(os.path.expanduser('~'))[-1])
-
 def button_click():
 	numbers = get_numbers()
 	sign = UI.get_sign()
